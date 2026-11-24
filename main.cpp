@@ -1,25 +1,6 @@
 // ============================================================================
 //  DanteViewer - Visor 3D de Dante (OpenGL + Win32)
 //
-//  Requisitos del parcial cubiertos aqui:
-//    * Carga de GLTF ............ Gltf.h / Json.h / Png.h (cargador propio, sin librerias)
-//    * Matrices de camara ....... matLookAt() y matPerspective() (se cargan con glLoadMatrixf)
-//    * Rotacion/traslacion ...... matModel() = Traslacion * RotacionY del personaje
-//    * Iluminacion Phong ........ luz puntual orbital + luz de relleno (ambiente+difusa+especular)
-//    * Curva de Bezier .......... Dante corre de A a B por una Bezier cubica
-//    * Entradas de teclado ...... WASD, B, R, 1, 2, L, F, M + panel Dear ImGui (opcional)
-//
-//  Animaciones: solo CORRER y QUIETO (el modelo GLTF no trae esqueleto, asi que la
-//  pose se calcula en codigo: ver poseModel()).
-//
-//  CONTROLES
-//    W A S D ............ correr libremente (relativo a la camara); al soltar, queda quieto
-//    B .................. correr por la curva Bezier de A a B      R ... volver a A
-//    1 / 2 .............. modo libre / modo Bezier
-//    Flechas, RePag/AvPag mover la camara (traslacion)   Mouse: orbitar   Rueda: zoom
-//    Q / E .............. girar el personaje (rotacion del objeto)
-//    L luz orbital   F alambre   M modelo GLTF / modelo basico   ESC salir
-//
 //  Modelo 3D: "DMC 4 DANTE" por Tremolo_1404_ (CC-BY 4.0) - ver assets/dante/license.txt
 // ============================================================================
 #define WIN32_LEAN_AND_MEAN
