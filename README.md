@@ -63,16 +63,6 @@ El modelo GLTF está en pose de T y **no trae esqueleto ni animaciones**. Por es
 | `Esc` | Salir |
 
 
-### Subir el proyecto a GitHub
-
-```
-git init
-git add .
-git commit -m "Parcial: visor 3D de Dante"
-git branch -M main
-git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-git push -u origin main
-```
 
 ## Créditos
 
