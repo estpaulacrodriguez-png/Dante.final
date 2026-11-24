@@ -1,10 +1,6 @@
 # DanteViewer
 
 **Autora:** Paula Rodríguez  
-**Repositorio (GitHub):** _(pega aquí el enlace de tu repositorio)_  
-**Video explicativo (YouTube):** _(pega aquí el enlace del video)_  
-**Proyecto:** visor 3D de Dante en C++ con OpenGL (Win32). Carga un modelo GLTF, lo ilumina con el modelo de Phong y lo hace **correr** a lo largo de una **curva de Bézier** o libremente con el teclado. Solo tiene dos animaciones: **correr** y **quedarse quieto**.
-
 ## Código
 
 | Archivo | Qué hace |
@@ -14,8 +10,6 @@
 | `Json.h` | Lector de JSON mínimo (para leer el `.gltf`) |
 | `Png.h` | Decodificador de PNG con su propio *inflate* (para las texturas) |
 | `assets/dante/` | Modelo `scene.gltf`, `scene.bin` y texturas |
-
-No necesita librerías externas: solo `opengl32` y `glu32`, que ya vienen con Windows. **Dear ImGui** es opcional (ver más abajo).
 
 ## Arquitectura del software
 
@@ -68,21 +62,8 @@ El modelo GLTF está en pose de T y **no trae esqueleto ni animaciones**. Por es
 | `M` | Modelo GLTF / modelo básico de primitivas |
 | `Esc` | Salir |
 
-## Cómo compilar y ejecutar
-
-1. Abre `DanteViewer.sln` con Visual Studio 2019 o 2022 (carga de escritorio con C++).
-2. Elige **Release** (la carga de texturas es más rápida) y presiona **F5**. Al iniciar tarda unos segundos en cargar las texturas.
-
-### Panel con Dear ImGui
-
-1. Con internet, haz doble clic en **`instalar_imgui.bat`**. Descarga Dear ImGui y lo deja en la carpeta `imgui/` (se hace una sola vez).
-2. Abre la solución y presiona **F5**. El proyecto detecta la carpeta `imgui/` y activa `USE_IMGUI` solo.
-
-Si prefieres hacerlo a mano, descarga https://github.com/ocornut/imgui y copia su contenido en `DanteViewer/imgui/`, de modo que existan `imgui/imgui.cpp` y `imgui/backends/imgui_impl_win32.cpp`. Sin la carpeta `imgui/`, el programa funciona igual con el teclado.
-
 ## Cumplimiento del parcial
 
-| # | Requisito del tablero | Dónde está |
 |---|---|---|
 | 1 | GitHub | Sube esta carpeta a un repositorio (ver abajo) |
 | 2 | README.md con nombre, código y arquitectura | Este archivo |
