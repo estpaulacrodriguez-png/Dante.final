@@ -62,18 +62,6 @@ El modelo GLTF está en pose de T y **no trae esqueleto ni animaciones**. Por es
 | `M` | Modelo GLTF / modelo básico de primitivas |
 | `Esc` | Salir |
 
-## Cumplimiento del parcial
-
-|---|---|---|
-| 1 | GitHub | Sube esta carpeta a un repositorio (ver abajo) |
-| 2 | README.md con nombre, código y arquitectura | Este archivo |
-| 3 | Matrices de traslación de la cámara | `matLookAt()` (rotación por traslación de `-ojo`), `matPerspective()` y la traslación con flechas / RePág / AvPág |
-| 3 | Rotación de objetos | `matModel()` y giro manual del personaje con `Q` / `E` |
-| 3 | Carga de GLTF | `Gltf.h`, `Json.h`, `Png.h` |
-| 3 | Iluminación (Phong) | `render()`: luz puntual orbital y luz de relleno con ambiente, difusa y especular |
-| 3 | Bézier | `bezierPoint()`, `bezierTangent()` y `buildArc()` |
-| 4 | Entradas de teclado y Dear ImGui | `update()`, `WM_KEYDOWN` y `drawUI()` |
-| 5 | Video explicativo en YouTube | Enlace al inicio de este archivo |
 
 ### Subir el proyecto a GitHub
 
